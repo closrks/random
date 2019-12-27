@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is the title of the webpage!</title>
+        <meta charset="UTF-8" />
+        <style>
+            body {
+                font-family: 'Open Sans', sans-serif;
+            }
+            @keyframes candycane {
+                from {
+                    background-position: 0 0;
+                }
+                to {
+                    background-position: 60px 20px;
+                }
+            }
+            .fq-btn {
+                cursor: pointer;
+                height: 32px;
+                padding: 0 20px;
+                border-radius: 3px;
+                background-color: #ec0f0f;
+                color: white;
+                font-size: 15px;
+                line-height: 1;
+                display: inline-flex;
+                border: 1px solid;
+                opacity: 0.8;
+                text-transform: uppercase;
+                transition: background-color 0.15s ease-in-out,
+                    color 0.1s ease-in-out;
+                background-image: linear-gradient(
+                    135deg,
+                    #277e62 25%,
+                    transparent 25.5%,
+                    transparent 50%,
+                    #277e62 50.5%,
+                    #277e62 75%,
+                    transparent 75.5%,
+                    transparent
+                );
+                background-size: 20px 20px;
+            }
+            .fq-btn:hover {
+                cursor: pointer;
+                animation: candycane 5s linear infinite;
+                /* opacity: 1; */
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="fq-btn">
+            Match
+        </button>
+    </body>
+</html>
